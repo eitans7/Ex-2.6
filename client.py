@@ -8,7 +8,7 @@ try:
 
     my_socket.connect(('127.0.0.1', 1729))
 
-    my_socket.send('hello world'.encode())
+    my_socket.send('hello world!'.encode())
 
     response = my_socket.recv(MAX_PACKET).decode()
 

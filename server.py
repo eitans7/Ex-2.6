@@ -22,7 +22,7 @@ try:
 
         request = client_socket.recv(MAX_PACKET).decode()
 
-        print ('server received ' + request)
+        print ('server received: ' + request)
 
         client_socket.send(request.encode())
 
