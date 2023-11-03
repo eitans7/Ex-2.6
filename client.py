@@ -1,12 +1,14 @@
 import socket
 
 MAX_PACKET = 1024
+IP = '127.0.0.1'
+PORT = 1729
 
 my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:
 
-    my_socket.connect(('127.0.0.1', 1729))
+    my_socket.connect((IP, PORT))
 
     my_socket.send('hello world!'.encode())
 

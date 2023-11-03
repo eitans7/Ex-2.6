@@ -1,18 +1,15 @@
 import socket
 
 MAX_PACKET = 1024
-
 IP = '0.0.0.0'
-
-PORT = 8820
-
+PORT = 1729
 QUEUE_LEN = 1
 
 my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:
 
-    my_socket.bind(('0.0.0.0', 1729))
+    my_socket.bind((IP, PORT))
 
     my_socket.listen(QUEUE_LEN)
 
