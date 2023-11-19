@@ -1,3 +1,9 @@
+"""
+Author: Eitan Shoshan
+Program name: Ex-2.6
+Description: the client have 4 command that he can ask the server to respond to.
+Date: 19-11-23
+"""
 import socket
 
 # MAX_PACKET = 1024
@@ -48,4 +54,5 @@ def main():
 
 
 if __name__ == "__main__":
+    assert protocol_send('eitan') == '5!eitan'
     main()

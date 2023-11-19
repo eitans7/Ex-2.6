@@ -84,4 +84,6 @@ def main():
 
 
 if __name__ == "__main__":
+    assert rand() in range(1, 11)
+    assert protocol_send('eitan') == '5!eitan'
     main()
